@@ -32,8 +32,10 @@ namespace StopWatch{
                 if (type == 'm')
                     multiplicador=60;
 
-                if(time == 0)
+                if(time == 0){
+                    Console.Clear();
                     System.Environment.Exit(0);
+                }
 
                 PreStart(time*multiplicador);
             }
